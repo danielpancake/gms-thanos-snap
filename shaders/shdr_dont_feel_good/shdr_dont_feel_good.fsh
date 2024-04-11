@@ -19,7 +19,13 @@ uniform vec2 direction; // Direction for the straight line mode
 uniform sampler2D tex; // Pattern texture
 uniform vec4 tex_uvs;  // Pattern UVs
 
-#define eps 0.0001
+vec2 normalize_sum(vec2 v) {
+  float sum = abs(v.x) + abs(v.y);
+  if (sum == 0.0) {
+    return v;
+  }
+  return v / sum;
+}
 
 void main() {
   gl_FragColor = v_vColour * texture2D( gm_BaseTexture, v_vTexcoord );
@@ -37,21 +43,17 @@ void main() {
   if (radial) {
     p_idx = length(coords - 0.5);
   } else {
-    vec2 wrapped = vec2(fract(coords * direction));
-    p_idx = (wrapped.x + wrapped.y) / 2.0;
+    p_idx = dot(0.5 - coords, -normalize_sum(direction)) + 0.5; // This is crazy
   }
   
-  p_idx += patten_val * spread * 2.0;
-  
   // Value for this pixel
-  float p_val = 1.0;
+  float p_val = 0.0;
   if (spread == 0.0) {
-    // Hard transition
     p_val = 1.0 - step(val, p_idx);
-  } else if (val < 1.0) {
-    // Smooth transition
-    float p_base = p_idx - spread;
-    float val_rel = max(0.0, val - p_base);
+  } else {
+    p_idx += patten_val * spread * 2.0;
+    
+    float val_rel = max(0.0, val - (p_idx - spread));
     p_val = min(1.0, val_rel / spread);
   }
   

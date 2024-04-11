@@ -1,6 +1,4 @@
-function Documentation() {
-	/*
-	******************
+/*******************
 	sprite_getpixel
 	    --by matharoo
 	******************
@@ -43,6 +41,3 @@ function Documentation() {
 
 	*/
 
-
-
-}
