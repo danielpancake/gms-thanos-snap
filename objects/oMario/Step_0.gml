@@ -9,7 +9,6 @@ if (!animStart && keyboard_check_pressed(ord("S"))) {
 	animStart = true;
 }
 
-
 // Animation started
 if (animStart) {
 	// Animation progress value

@@ -8,10 +8,12 @@
     {"name":"Shaders","order":7,"path":"folders/Shaders.yy",},
   ],
   "ResourceOrderSettings":[
-    {"name":"sNoisePattern","order":1,"path":"sprites/sNoisePattern/sNoisePattern.yy",},
-    {"name":"sPartDust","order":2,"path":"sprites/sPartDust/sPartDust.yy",},
-    {"name":"sprite_getpixel","order":1,"path":"scripts/sprite_getpixel/sprite_getpixel.yy",},
+    {"name":"get_shdr_uniforms","order":1,"path":"scripts/get_shdr_uniforms/get_shdr_uniforms.yy",},
+    {"name":"set_shdr_uniforms","order":2,"path":"scripts/set_shdr_uniforms/set_shdr_uniforms.yy",},
     {"name":"sprite_data_begin","order":1,"path":"scripts/sprite_data_begin/sprite_data_begin.yy",},
     {"name":"sprite_data_end","order":2,"path":"scripts/sprite_data_end/sprite_data_end.yy",},
+    {"name":"sprite_getpixel","order":1,"path":"scripts/sprite_getpixel/sprite_getpixel.yy",},
+    {"name":"sNoisePattern","order":1,"path":"sprites/sNoisePattern/sNoisePattern.yy",},
+    {"name":"sPartDust","order":2,"path":"sprites/sPartDust/sPartDust.yy",},
   ],
 }

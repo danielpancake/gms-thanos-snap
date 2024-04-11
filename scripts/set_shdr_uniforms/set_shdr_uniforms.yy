@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"set_shdr_uniforms",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"set_shdr_uniforms",
+  "parent":{
+    "name":"Shaders",
+    "path":"folders/Shaders.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

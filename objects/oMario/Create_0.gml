@@ -1,24 +1,14 @@
-/// @description 
-//
-// CHECK VARIABLE DEFITIONS WINDOW
-//
-
+/// @desc Setup variables
 // Debug overlay
 show_debug_overlay(1)
 
 // Shader Uniforms
-uniUvs = shader_get_uniform(shNoFeelGood, "uvs");
-uniVal = shader_get_uniform(shNoFeelGood, "val");
-uniCol = shader_get_uniform(shNoFeelGood, "fadeCol");
-uniSpread = shader_get_uniform(shNoFeelGood, "spread");
-
-uniTexUvs = shader_get_uniform(shNoFeelGood, "texUvs");
-uniTex = shader_get_sampler_index(shNoFeelGood, "tex");
+uniforms = get_shdr_dont_feel_good_uniforms();
 
 // Don't feel so good
-animVal = 0.2; // Animation progress, from 0-1
-animSpeed = sprite_width / 60000; // Animation speed
-animSpread = 0.12; // How much the effect is spread out / feathered
+animVal = 0; // Animation progress, from 0-1
+animSpeed = sprite_width / 20000; // Animation speed
+animSpread = 0.15; // How much the effect is spread out / feathered
 
 animStart = false; // Whether the animation has been started
 
@@ -35,26 +25,6 @@ part_type_speed(partDust, 0.15, 0.28, 0, 0.01);
 part_type_direction(partDust, 35, 70, 0.1, 8);
 part_type_alpha2(partDust, 1, 0);
 part_type_life(partDust, 80, 140);
-
-//	 DISABLED
-// Pattern array
-// In a 2D array, stores the value of each pixel of the pattern
-//pattern = [];
-
-//var _spr = sPattern;
-//var _w = sprite_get_width(_spr);
-//var _h = sprite_get_height(_spr);
-
-//for (var _x = 0; _x < _w; _x++) {
-//	for (var _y = 0; _y < _h; _y++) {
-//		var _col = sprite_getpixel(_spr, 0, _x, _y);
-		
-//		pattern[_x, _y] = _col[0] / 255;
-//	}
-//}
-
-//patternW = _w;
-//patternH = _h;
 
 // Alpha array
 // In a 2D array, stores the alpha of each pixel of the sprite

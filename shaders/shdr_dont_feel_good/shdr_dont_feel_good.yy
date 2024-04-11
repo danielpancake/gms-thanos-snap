@@ -1,7 +1,7 @@
 {
   "$GMShader":"",
-  "%Name":"shNoFeelGood",
-  "name":"shNoFeelGood",
+  "%Name":"shdr_dont_feel_good",
+  "name":"shdr_dont_feel_good",
   "parent":{
     "name":"Shaders",
     "path":"folders/Shaders.yy",
