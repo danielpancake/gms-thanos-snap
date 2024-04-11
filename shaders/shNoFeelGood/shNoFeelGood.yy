@@ -1,7 +1,12 @@
 {
-    "id": "f7c3c693-e426-4963-a294-f4201d663c51",
-    "modelName": "GMShader",
-    "mvc": "1.0",
-    "name": "shNoFeelGood",
-    "type": 1
+  "$GMShader":"",
+  "%Name":"shNoFeelGood",
+  "name":"shNoFeelGood",
+  "parent":{
+    "name":"Shaders",
+    "path":"folders/Shaders.yy",
+  },
+  "resourceType":"GMShader",
+  "resourceVersion":"2.0",
+  "type":1,
 }

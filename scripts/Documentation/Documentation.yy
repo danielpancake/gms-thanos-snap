@@ -1,8 +1,13 @@
 {
-    "id": "e9fdcedb-25be-4160-97bf-15cd399a1d0f",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "Documentation",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "$GMScript":"",
+  "%Name":"Documentation",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Documentation",
+  "parent":{
+    "name":"SpriteData (Dependency)",
+    "path":"folders/Scripts/SpriteData (Dependency).yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

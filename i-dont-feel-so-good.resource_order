@@ -1,0 +1,17 @@
+{
+  "FolderOrderSettings":[
+    {"name":"Fonts","order":8,"path":"folders/Fonts.yy",},
+    {"name":"Objects","order":10,"path":"folders/Objects.yy",},
+    {"name":"Rooms","order":11,"path":"folders/Rooms.yy",},
+    {"name":"Scripts","order":6,"path":"folders/Scripts.yy",},
+    {"name":"Internal","order":2,"path":"folders/Scripts/SpriteData (Dependency)/Internal.yy",},
+    {"name":"Shaders","order":7,"path":"folders/Shaders.yy",},
+  ],
+  "ResourceOrderSettings":[
+    {"name":"sNoisePattern","order":1,"path":"sprites/sNoisePattern/sNoisePattern.yy",},
+    {"name":"sPartDust","order":2,"path":"sprites/sPartDust/sPartDust.yy",},
+    {"name":"sprite_getpixel","order":1,"path":"scripts/sprite_getpixel/sprite_getpixel.yy",},
+    {"name":"sprite_data_begin","order":1,"path":"scripts/sprite_data_begin/sprite_data_begin.yy",},
+    {"name":"sprite_data_end","order":2,"path":"scripts/sprite_data_end/sprite_data_end.yy",},
+  ],
+}

@@ -1,8 +1,13 @@
 {
-    "id": "96a42a01-3a39-499b-814d-15262fd638e1",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "sprite_pragma",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "$GMScript":"",
+  "%Name":"sprite_pragma",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"sprite_pragma",
+  "parent":{
+    "name":"Internal",
+    "path":"folders/Scripts/SpriteData (Dependency)/Internal.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

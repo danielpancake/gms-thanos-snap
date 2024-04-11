@@ -1,6 +1,5 @@
 /// @description 
 // Text
-draw_set_font(font0);
 draw_text(4, 4, "Press S to play");
 
 // Set shader
@@ -8,14 +7,16 @@ shader_set(shNoFeelGood);
 
 // UVs for base sprite
 var _uvs = sprite_get_uvs(sprite_index, image_index);
+_uvs = [_uvs[0], _uvs[1], _uvs[2], _uvs[3]];
 shader_set_uniform_f_array(uniUvs, _uvs);
 
 // Pattern texture
-var _tex = sprite_get_texture(sPattern, 0);
+var _tex = sprite_get_texture(sNoisePattern, 0);
 texture_set_stage(uniTex, _tex);
 
 // Pattern texture UVs
 _uvs = texture_get_uvs(_tex);
+_uvs = [_uvs[0], _uvs[1], _uvs[2], _uvs[3]];
 shader_set_uniform_f_array(uniTexUvs, _uvs);
 
 // Other uniforms
