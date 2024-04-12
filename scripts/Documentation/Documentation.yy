@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"Documentation",
   "parent":{
-    "name":"SpriteData (Dependency)",
-    "path":"folders/Scripts/SpriteData (Dependency).yy",
+    "name":"Sprite Data (Dependency)",
+    "path":"folders/Scripts/Sprite Data (Dependency).yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

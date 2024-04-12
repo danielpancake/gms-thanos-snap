@@ -1,9 +1,9 @@
 {
   "$GMScript":"",
-  "%Name":"sprite_getpixel",
+  "%Name":"sprite_data",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"sprite_getpixel",
+  "name":"sprite_data",
   "parent":{
     "name":"Sprite Data (Dependency)",
     "path":"folders/Scripts/Sprite Data (Dependency).yy",

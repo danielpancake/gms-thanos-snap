@@ -28,19 +28,24 @@ if (anim_start) {
     var _dx = 0;
     var _dy = 0;
     
-    while (
-      abs(_dx) < (sprite_width / 2) && abs(_dy) < (sprite_height / 2)
-    ) {
+    while (abs(_dx) < (sprite_width / 2) && abs(_dy) < (sprite_height / 2)) {
       var _x = clamp(_px + _dx - _x_origin, 0, sprite_width - 1);
       var _y = clamp(_py + _dy - _y_origin, 0, sprite_height - 1);
       
       if (alpha[floor(_x), floor(_y)] > 0) {
         part_particles_create(part_sys, _px + _dx, _py + _dy, part_dust, 1);
+      }
+      
+      _x = clamp(_px - _dx - _x_origin, 0, sprite_width - 1);
+      _y = clamp(_py - _dy - _y_origin, 0, sprite_height - 1);
+      
+      if (alpha[floor(_x), floor(_y)] > 0) {
         part_particles_create(part_sys, _px - _dx, _py - _dy, part_dust, 1);
       }
       
-      _dx += lengthdir_x(random_range(0.5, 2), _theta);
-      _dy += lengthdir_y(random_range(0.5, 2), _theta);
+      var _d = random_range(5, 10); // TODO: move to params
+      _dx += lengthdir_x(_d, _theta);
+      _dy += lengthdir_y(_d, _theta);
     }
     
     anim_part_last = anim_val;
