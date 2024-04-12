@@ -54,6 +54,7 @@ function sprite_getpixel(_sprite, _subimg, _x, _y) {
       draw_clear_alpha(c_white, 0);
       gpu_set_blendmode_ext(bm_one, bm_zero);
       
+      draw_set_alpha(1);
       draw_sprite(_sprite, _subimg, _spr_x, _spr_y);
       
       gpu_set_blendmode(bm_normal);
