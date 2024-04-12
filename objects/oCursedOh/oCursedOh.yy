@@ -43,7 +43,7 @@
     {"$GMObjectProperty":"","%Name":"anim_speed","filters":[],"listItems":[],"multiselect":false,"name":"anim_speed","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"sprite_width / 100000","varType":0,},
     {"$GMObjectProperty":"","%Name":"anim_spread","filters":[],"listItems":[],"multiselect":false,"name":"anim_spread","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0.15","varType":0,},
     {"$GMObjectProperty":"","%Name":"anim_part_interval","filters":[],"listItems":[],"multiselect":false,"name":"anim_part_interval","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0.005","varType":0,},
-    {"$GMObjectProperty":"","%Name":"direction_x","filters":[],"listItems":[],"multiselect":false,"name":"direction_x","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"1","varType":0,},
+    {"$GMObjectProperty":"","%Name":"direction_x","filters":[],"listItems":[],"multiselect":false,"name":"direction_x","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
     {"$GMObjectProperty":"","%Name":"direction_y","filters":[],"listItems":[],"multiselect":false,"name":"direction_y","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"-1","varType":0,},
   ],
   "resourceType":"GMObject",

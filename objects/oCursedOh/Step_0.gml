@@ -14,8 +14,8 @@ if (anim_start) {
   anim_val = clamp(anim_val + anim_speed, 0, 1);
   
   if (anim_val - anim_part_last > anim_part_interval && anim_val >= anim_spread) {
-    var _x_origin = x - sprite_get_xoffset(sprite_index);
-    var _y_origin = y - sprite_get_yoffset(sprite_index);
+    var _x_origin = x - sprite_get_xoffset(sprite_index) * image_xscale;
+    var _y_origin = y - sprite_get_yoffset(sprite_index) * image_yscale;
     
     var _theta = 90 - darctan2(direction_y, direction_x);
     

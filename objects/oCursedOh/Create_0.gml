@@ -3,6 +3,8 @@
 show_debug_overlay(true);
 
 image_speed = 0;
+image_xscale = 0.5;
+image_yscale = 0.5;
 
 anim_val = 0; // Animation progress
 
@@ -34,7 +36,7 @@ var _h = sprite_height;
 
 for (var _x = 0; _x < _w; ++_x) {
   for (var _y = 0; _y < _h; ++_y) {
-    var _col = sprite_getpixel(sprite_index, 0, _x, _y);
+    var _col = sprite_getpixel(sprite_index, 0, _x / image_xscale, _y / image_yscale);
     alpha[_x, _y] = _col[3];
   }
 }

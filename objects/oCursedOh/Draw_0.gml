@@ -22,8 +22,8 @@ shader_reset();
 
 // Draw debug line to show the progress
 if (keyboard_check(vk_space)) {
-  var _x_origin = x - sprite_get_xoffset(sprite_index);
-  var _y_origin = y - sprite_get_yoffset(sprite_index);
+  var _x_origin = x - sprite_get_xoffset(sprite_index) * image_xscale;
+  var _y_origin = y - sprite_get_yoffset(sprite_index) * image_yscale;
   
   draw_rectangle(_x_origin, _y_origin, _x_origin + sprite_width, _y_origin + sprite_height, true);
   
